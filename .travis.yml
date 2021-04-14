@@ -10,4 +10,4 @@ install:
   - docker build -t travis-docker-test:latest .
 
 after_success:
-  - docker run --entrypoint=cat hello.txt travis-docker-test:latest
+  - docker run --entrypoint=cat travis-docker-test:latest hello.txt
